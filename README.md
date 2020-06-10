@@ -7,7 +7,7 @@ Backend of the GithubExplorer application, that allows you to search and store i
 
 The following steps will help install and run GitHubExplorer-backend on your local computer. Make sure database instances are active:
 
-1. git clone https://github.com/Caxandre/FirebirdConnectionTest;
+1. git clone https://github.com/Caxandre/GitHubExplorer-backend.git;
 
 2. Install all project dependencies with *npm install* or *yarn install*;
 
@@ -21,7 +21,7 @@ The following steps will help install and run GitHubExplorer-backend on your loc
 
 * GET /repositories
 
-Returns Array -> 
+Returns Array ->
 ```json
 [
 	{
@@ -57,7 +57,7 @@ Returns Array ->
          "state":"open",
          "created_at":"2020-06-09T22:46:16.876Z",
          "updated_at":"2020-06-09T22:46:16.876Z"
-      }     
+      }
     ]
   }
 ]
@@ -65,7 +65,7 @@ Returns Array ->
 
 * POST /repositories
 
-Sending Body -> 
+Sending Body ->
 ```json
 {
   "full_name":"Caxandre/MeetApp",
@@ -77,7 +77,7 @@ Sending Body ->
 }
 ```
 
-Returns Object -> 
+Returns Object ->
 ```json
 {
   "id": "02373b3b-8a85-4c49-b75e-8d3d5e87eb53",
@@ -119,7 +119,7 @@ Returns Object ->
 * GET /repositories/:id
 Sending -> '/repositories/02373b3b-8a85-4c49-b75e-8d3d5e87eb53'
 
-Returns Object -> 
+Returns Object ->
 ```json
 {
   "id": "02373b3b-8a85-4c49-b75e-8d3d5e87eb53",
